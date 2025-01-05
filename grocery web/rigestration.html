@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="registor.js"></script>
+    
+</head>
+<body>
+     <!-- Registration Modal -->
+     <div class="modal" id="registration-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Register</h2>
+            <div class="form-tabs">
+                <button id="login-tab">Login</button>
+                <button id="signup-tab">Sign Up</button>
+            </div>
+            <div class="form-container">
+                <!-- Login Form -->
+                <form id="login-form" class="form">
+                    <label for="login-username">Username or Email:</label>
+                    <input type="text" id="login-username" placeholder="Enter your username or email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </form>
+                
+               
+            </div>
+        </div>
+    </div>
+    
+     <!-- Sign-Up Form -->
+     <form id="signup-form" class="form hidden">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" placeholder="Enter your first name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" placeholder="Enter your last name" required>
+        <label for="signup-email">Email or Phone Number:</label>
+        <input type="email" id="signup-email" placeholder="Enter your email or phone number" required>
+        <label for="address">Address (Optional):</label>
+        <input type="text" id="address" placeholder="Enter your address">
+        <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+</body>
+</html>
